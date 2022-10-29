@@ -1,0 +1,13 @@
+name: tests
+
+on:
+  workflow_run:
+    workflows: ["build"]
+    branches: ['*']
+    types:
+      - completed
+
+jobs:
+  tests:
+    steps:
+      run: ls ${{github.workspace}}/build
