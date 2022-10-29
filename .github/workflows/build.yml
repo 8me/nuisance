@@ -11,7 +11,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: picker24/nuisance_dirt2:debian_bullseye-slim
 
     steps:
     - uses: actions/checkout@v3
