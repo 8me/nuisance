@@ -10,4 +10,4 @@ on:
 jobs:
   tests:
     steps:
-      run: ls ${{github.workspace}}/build
+      - run: ls ${{github.workspace}}/build
